@@ -1,4 +1,4 @@
-# CS272 Project Description
+# CS272 Team 5 Project Description
 ## AFL++: Combining Incremental Steps of Fuzzing Research
 ### Andrew Peng, Khalid Mihlar, Suraj K Suresh, Setareh Khoshnoo, Brian Chen
 
