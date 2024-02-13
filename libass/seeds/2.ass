@@ -1,0 +1,57 @@
+[Script Info]
+; This is an Advanced Sub Station Alpha v4+ script.
+Title: subtitles
+ScriptType: v4.00+
+Collisions: Normal
+PlayDepth: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,20,&H00FFFFFF,&H0300FFFF,&H00000000,&H02000000,0,0,0,0,100,100,0,0,1,2,1,2,10,10,10,1
+
+[Events]
+Format: Layer, Start, End, Style, Actor, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:53.56,0:00:56.02,Default,,0,0,0,,There once\Nwas a peculiar doctor,
+Dialogue: 0,0:00:56.24,0:00:59.75,Default,,0,0,0,,known for\Nhis extraordinary ability.
+Dialogue: 0,0:00:59.92,0:01:02.91,Default,,0,0,0,,He could talk to animals.
+Dialogue: 0,0:01:04.68,0:01:07.55,Default,,0,0,0,,Dr. Dolittle's reputation\Nspread far and wide.
+Dialogue: 0,0:01:07.72,0:01:10.28,Default,,0,0,0,,Even the Queen of England\Ncalled on him.
+Dialogue: 0,0:01:10.96,0:01:12.87,Default,,0,0,0,,So grateful for his help,
+Dialogue: 0,0:01:13.04,0:01:15.35,Default,,0,0,0,,she gifted him\Na wondrous sanctuary
+Dialogue: 0,0:01:15.52,0:01:17.91,Default,,0,0,0,,whose doors were open\Nto all creatures.
+Dialogue: 0,0:01:19.28,0:01:21.31,Default,,0,0,0,,His days belonged\Nto the animals,
+Dialogue: 0,0:01:21.48,0:01:25.15,Default,,0,0,0,,but his heart\Nbelonged to one woman,
+Dialogue: 0,0:01:25.96,0:01:29.39,Default,,0,0,0,,Lily, the fearless explorer.
+Dialogue: 0,0:01:30.56,0:01:33.95,Default,,0,0,0,,They traveled the globe,\Ngoing on great adventures.
+Dialogue: 0,0:01:34.12,0:01:37.87,Default,,0,0,0,,Defending creatures\Nwho could not defend themselves.
+Dialogue: 0,0:01:43.64,0:01:46.71,Default,,0,0,0,,They made\Nan extraordinary team.
+Dialogue: 0,0:01:47.52,0:01:50.43,Default,,0,0,0,,Soon, that team\Nbecame a family.
+Dialogue: 0,0:01:52.68,0:01:58.11,Default,,0,0,0,,With Lily by his side,\NDolittle never felt more alive.
+Dialogue: 0,0:01:59.04,0:02:03.19,Default,,0,0,0,,Until one day,\Nshe left on an adventure.
+Dialogue: 0,0:02:10.44,0:02:13.08,Default,,0,0,0,,Lily died at sea.
+Dialogue: 0,0:02:17.16,0:02:18.19,Default,,0,0,0,,Heartbroken,
+Dialogue: 0,0:02:18.80,0:02:20.59,Default,,0,0,0,,he locked\Nthe gates of the manor
+Dialogue: 0,0:02:20.68,0:02:23.43,Default,,0,0,0,,and completely retreated\Nfrom the world.
+Dialogue: 0,0:02:23.60,0:02:27.95,Default,,0,0,0,,As for me, and the animals\Nwhose lives he'd saved,
+Dialogue: 0,0:02:28.12,0:02:32.47,Default,,0,0,0,,we were left to wonder,\Ncould anyone save his?
+Dialogue: 0,0:02:36.80,0:02:40.03,Default,,0,0,0,,Until one morning,\Na most unlikely creature
+Dialogue: 0,0:02:40.12,0:02:42.31,Default,,0,0,0,,found its way\Ninto Dolittle's life.
+Dialogue: 0,0:02:42.48,0:02:44.99,Default,,0,0,0,,A very special boy.
+Dialogue: 0,0:02:45.16,0:02:47.03,Default,,0,0,0,,In a time where people\Nthought of animals
+Dialogue: 0,0:02:47.12,0:02:50.47,Default,,0,0,0,,only as possessions,\Nfood, or sport,
+Dialogue: 0,0:02:50.64,0:02:53.39,Default,,0,0,0,,this boy felt\Nquite differently.
+Dialogue: 0,0:03:02.68,0:03:04.83,Default,,0,0,0,,This way,\Nme scattered squirrel.
+Dialogue: 0,0:03:05.20,0:03:06.23,Default,,0,0,0,,Right.
+Dialogue: 0,0:03:07.44,0:03:09.83,Default,,0,0,0,,Junior flushes them.\NYou shoot them, yeah?
+Dialogue: 0,0:03:10.04,0:03:11.67,Default,,0,0,0,,Right.\NGood plan, Dad.
+Dialogue: 0,0:03:11.76,0:03:12.76,Default,,0,0,0,,Get ready.
+Dialogue: 0,0:03:12.92,0:03:13.95,Default,,0,0,0,,Shoulder your gun.
+Dialogue: 0,0:03:14.04,0:03:15.31,Default,,0,0,0,,Do I have to, Uncle?
+Dialogue: 0,0:03:15.48,0:03:16.63,Default,,0,0,0,,Come on, boy.
+Dialogue: 0,0:03:17.60,0:03:19.87,Default,,0,0,0,,Duck! Duck!
+Dialogue: 0,0:03:20.04,0:03:21.59,Default,,0,0,0,,Duck, duck, duck!
+Dialogue: 0,0:03:21.80,0:03:23.29,Default,,0,0,0,,There, there they go.\NShoot, shoot, shoot.
+Dialogue: 0,0:03:23.32,0:03:25.25,Default,,0,0,0,,You got him, you got him, you got him.\NShoot, shoot, shoot.
+Dialogue: 0,0:03:25.28,0:03:26.47,Default,,0,0,0,,Oh, no, I can't!
+Dialogue: 0,0:03:26.68,0:03:27.95,Default,,0,0,0,,Shoot,\Nshoot, shoot.
+Dialogue: 0,0:03:31.36,0:03:33.39,Default,,0,0,0,,You can't keep\Nmissing on purpo
