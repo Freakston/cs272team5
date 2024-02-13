@@ -13,6 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag afllibass:$(date +%s)
+    - name: Check out repository
+      uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: docker build -t libassfuzz .
+
+    - name: Run Docker container
+      run: docker run -d --name libassfuzzcontainer libassfuzz
+
+    - name: Check if Docker container is running
+      run: docker ps | grep libassfuzzcontainer
+
+    - name: Get Docker container logs
+      run: docker logs libassfuzzcontainer
