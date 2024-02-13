@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh -l
 
 # Check if the argument is provided
 if [ $# -eq 0 ]; then
