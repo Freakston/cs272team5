@@ -2,9 +2,9 @@ name: 'Fuzzing action'
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, khalid_docker_test, setareh ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, khalid_docker_test, setareh ]
 
 runs:
   using: 'docker'
