@@ -15,8 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag afllibass:$(date)
-    - name: Run the image
-      run: docker run --name afllibassrun afllibass:$(date)
-
-
+      run: docker build . --file Dockerfile --tag afllibass:$(date +%s)
