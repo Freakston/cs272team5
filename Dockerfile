@@ -12,3 +12,4 @@ COPY fuzz.sh /fuzz.sh
 
 RUN chmod +x /fuzz.sh
 
+ENTRYPOINT [ "/fuzz.sh" ]
