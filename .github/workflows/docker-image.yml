@@ -20,10 +20,13 @@ jobs:
       run: docker build -t libassfuzz .
 
     - name: Run Docker container
-      run: docker run -it --name libassfuzzcontainer libassfuzz
+      run: docker run -d --name libassfuzzcontainer libassfuzz
 
     - name: Check if Docker container is running
       run: docker ps | grep libassfuzzcontainer
 
+    - name: Sleepy time
+      run: sleep 10
+      
     - name: Get Docker container logs
       run: docker logs libassfuzzcontainer
