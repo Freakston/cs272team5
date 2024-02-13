@@ -1,11 +1,33 @@
-name: 'Fuzzing action'
+name: Fuzzer
 
 on:
   push:
-    branches: [ main, khalid_docker_test, setareh ]
-  pull_request:
-    branches: [ main, khalid_docker_test, setareh ]
+    branches:
+      - main
+  
+  workflow_dispatch:
 
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: docker build -t afl-image .
+      - name: Create output directory
+        run: mkdir ${{ github.workspace }}/results
+      - name: Run Docker container
+        run: |
+          docker run -v ${{ github.workspace }}/results:/libass/out afl-image
+      - name: Change ownership of results folder
+        run: sudo chmod -R 777 ${{ github.workspace }}/results
+      - name: zip the folder results
+        run: zip -r results.zip ${{ github.workspace }}/results      
+      - name: Zip and upload results folder
+        uses: actions/upload-artifact@v2
+        with:
+          name: results
+          path: ${{ github.workspace }}/results.zip
