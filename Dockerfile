@@ -12,4 +12,4 @@ COPY fuzz.sh /fuzz.sh
 
 RUN chmod +x /fuzz.sh
 
-ENTRYPOINT [ "/fuzz.sh","libass","360"]
+ENTRYPOINT [ "/fuzz.sh","libass","120"]
