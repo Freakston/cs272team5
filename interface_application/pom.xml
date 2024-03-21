@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <!-- (0) <modelVersion/> -->
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- (1) <parent/> -->
+
+  <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.1.1</version>
+  </parent>
+
+  <!-- (2) <groupId/> -->
+  <groupId>edu.ucsb.cs156</groupId>
+
+  <!-- (3) <artifactId/> -->
+
+  <artifactId>team01</artifactId>
+
+  <!-- (4) <version/> -->
+  <version>1.0.0</version>
+
+  <!-- (5) <packaging/> -->
+  <!-- (6) <name/> -->
+  <!-- (7) <description/> -->
+
+  <description>Demonstration of Spring Boot Backend</description>
+
+  <!-- (8) <url/> -->
+  <!-- (9) <inceptionYear/> -->
+  <!-- (10) <organization/> -->
+  <!-- (11) <licenses/> -->
+  <!-- (12) <developers/> -->
+  <!-- (13) <contributors/> -->
+  <!-- (14) <mailingLists/> -->
+  <!-- (15) <prerequisites/> -->
+  <!-- (16) <modules/> -->
+  <!-- (17) <scm/> -->
+  <!-- (18) <issueManagement/> -->
+  <!-- (19) <ciManagement/> -->
+  <!-- (20) <distributionManagement/> -->
+  <!-- (21) <properties/> -->
+
+  <properties>
+    <java.version>17</java.version>
+    <mainClass>edu.ucsb.cs272.example.Application</mainClass>
+  </properties>
+
+  <!-- (22) <dependencyManagement/> -->
+  <!-- (23) <dependencies/> -->
+
+  <dependencies>
+    <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <optional>true</optional>
+    </dependency>
+
+    <!-- https://springdoc.org/ -->
+    <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+      <version>2.1.0</version>
+   </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+    <dependency>
+      <groupId>com.opencsv</groupId>
+      <artifactId>opencsv</artifactId>
+      <version>5.4</version>
+    </dependency>
+
+    <dependency>
+      <groupId>me.paulschwarz</groupId>
+      <artifactId>spring-dotenv</artifactId>
+      <version>2.4.1</version>
+    </dependency>
+  </dependencies>
+
+  <!-- (24) <repositories/> -->
+  <!-- (25) <pluginRepositories/> -->
+  <!-- (26) <build/> -->
+
+  <build>
+    <plugins>
+      <!-- Gives us: mvn spring-boot:run -->
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>${mainClass}</mainClass>
+        </configuration>
+      </plugin>
+
+      <!-- For mvn:package, the jar file is now executable -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <archive>
+            <manifest>
+              <!-- full package name of class with the main you want to run -->
+              <mainClass>${mainClass}</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <!-- (27) <reporting/> -->
+  <!-- (28) <profiles/> -->
+
+</project>

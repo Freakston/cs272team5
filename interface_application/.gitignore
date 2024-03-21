@@ -1,0 +1,32 @@
+
+.factorypath
+.env
+
+# For Java
+*.class
+
+
+# For various IDEs
+.classpath
+.project
+.settings
+.vscode/
+*.sublime-*
+.idea
+*.iml
+
+# For Maven
+
+target
+dependency-reduced-pom.xml
+
+upload-dir
+
+# For emacs/vim
+*~
+*.sw?
+\#*\#
+
+
+# For MacOS
+.DS_Store
